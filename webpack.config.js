@@ -13,7 +13,7 @@ module.exports = {
         historyApiFallback: true,
     },
     output: {
-        publicPath: "http://localhost:3000/",
+        publicPath: "http://localhost:8080/",
     },
     module: {
         rules: [

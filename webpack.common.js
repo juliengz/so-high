@@ -3,17 +3,8 @@ const path = require("path");
 
 module.exports = {
     entry: "./src/index",
-    mode: "development",
-    resolve: {
-        extensions: [".js"],
-    },
-    devServer: {
-        contentBase: path.join(__dirname, "dist"),
-        port: 3000,
-        historyApiFallback: true,
-    },
     output: {
-        publicPath: "http://localhost:8080/",
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
